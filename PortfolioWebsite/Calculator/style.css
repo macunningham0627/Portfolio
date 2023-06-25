@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+:root {
+	--buttonSize: 50px; 
+}
+
+
+#calculator-head {
+	width: calc(4 * var(--buttonSize) - 10px);
+	height: 100px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+	background: beige;
+	outline: 1px solid black;
+}
+
+#calculator-body {
+	width: calc(4 * var(--buttonSize));
+	display: flex;
+	flex-wrap: wrap;
+	outline: 1px solid darkgrey;
+}
+
+#calculator-body button {
+	width: 20%;
+	outline: none;
+}
+
+.num_button {
+	background-color: darkgrey;
+}
+
+.oper_button {
+	background-color: orange;
+}
+
+#calculator-body #clear_button {
+	width: 60%;
+	background-color: lightgrey;
+}
+
+#prev-input {
+	font-weight: lighter;
+	font-size: 0.9em;
+}
+
+#operand {
+	height: 18px;
+	width: calc(4 * var(--buttonSize));
+	text-align: right;
+	margin: 0px;
+}
+
+#calc-input {
+	width: calc(4 * var(--buttonSize) - 8px);
+	text-align: right;
+	outline: 1px solid darkgrey;
+}

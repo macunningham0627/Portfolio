@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<div id="calculator-head">
+			<p id="prev-input"></p>
+			<p id="result"></p>
+			<p id="operand"></p>
+		</div>
+		
+			<input type=number id="calc-input" readonly> <br>
+		
+		<div id="calculator-body">
+			<button class="num_button" onclick="concatNum(7)">7</button>
+			<button class="num_button" onclick="concatNum(8)">8</button>
+			<button class="num_button" onclick="concatNum(9)">9</button>
+			
+			<button class="oper_button" onclick="add()">+</button>
+			<button class="oper_button" onclick="subtract()">-</button>
+			
+			<button class="num_button" onclick="concatNum(4)">4</button>
+			<button class="num_button" onclick="concatNum(5)">5</button>
+			<button class="num_button" onclick="concatNum(6)">6</button>
+			
+			<button class="oper_button" onclick="multiply()">&times;</button>
+			<button class="oper_button" onclick="divide()">&divide;</button>
+			
+			
+			<button class="num_button" onclick="concatNum(1)">1</button>
+			<button class="num_button" onclick="concatNum(2)">2</button>
+			<button class="num_button" onclick="concatNum(3)">3</button>
+			
+			<button class="oper_button" onclick="exp()">x<sup>y</sup></button>
+			<button class="oper_button" id="equals_button" onclick="calculate()">=</button>
+			
+			<button class="num_button" onclick="concatNum(0)">0</button>
+			<button class="num_button" onclick="addDecimal()">.</button>
+			
+			<button class="oper_button" id="clear_button" onclick="clearInput()">CLEAR</button>
+		</div>
+	</body>
+</html>

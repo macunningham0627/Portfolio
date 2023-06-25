@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Marcelo Cunningham - Portfolio</title>
+		<link rel="stylesheet" href="homepagestyle.css">
+	</head>
+	<body>
+		<!-- Top of page -->
+		<div id="top-bar">
+			<div class="info">Marcelo Cunningham
+				<div class="contact">
+					<img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png">
+					+1(619)905-3818
+				</div>
+				<div style="clear:both"></div>
+				<div class="contact">
+					<img src="https://img.freepik.com/free-icon/envelope_318-409263.jpg?size=626&ext=jpg">
+					<a href="mailto: mac.0627@yahoo.com">mac.0627@yahoo.com</a>
+				</div>
+			</div>
+			
+			<div class="menu">
+				<a class="menulink" href="#introduction">Home</a>
+				<a class="menulink" href="#minesweeper">Minesweeper</a>
+				<a class="menulink" href="#calculator">Calculator</a>
+			</div>
+		</div>
+		
+		<!-- Introduction -->
+		<div id="introduction">
+			<h1>Introduction</h1>
+			<p id="intro-para">
+				Hello! My name is Marcelo Cunningham. I am a graduate from the
+				<a href="https://www.washington.edu/" target="_blank">University of Washington</a>
+				with proficiency in mathematics and programming.
+				This webpage serves to showcase my capability with
+				the programming languages Java, HTML, CSS, and Javascript.
+				In fact, this page was built from scratch using HTML and CSS.
+				What follows are descriptions of projects made using Java
+				or the web development languages, along with links to the
+				projects. You can use the navigation bar at the top to
+				immediately jump to any project on the page.
+			</p>
+		</div>
+		
+		<!-- Projects -->
+		<div id="projects">
+			<!-- Minesweeper -->
+			<div id="minesweeper" class="project">
+				<h1>Minesweeper</h1>
+				<a href="https://github.com/macunningham0627/Minesweeper" target="_blank">Minesweeper project</a>
+				<p>
+					Minesweeper is a game in which the player attempts
+					to reveal squares in a grid while avoiding mines. 
+					   
+				</p>
+				<figure>
+					<img src="images/minesweeper_starting_grid.png" id=start-grid>
+					<figcaption>This is what the grid looks like at the start of the game.</figcaption>
+				</figure>
+				<p>
+					A square is revealed by clicking on it; this will then
+					show a number indicating how many adjacent squares
+					contain a mine. Players must use this information to
+					determine which squares are safe.
+				</p>
+				<figure>
+					<img src="images/minesweeper_revealed_squares.png" id=reveal-squares>
+					<figcaption>Revealed squares</figcaption>
+				</figure>
+				<p>
+					The player wins when every safe square has
+					been revealed.
+				</p>
+				<figure>
+					<img src="images/minesweeper_win.png" id=win>
+					<figcaption>A completed game of Minesweeper</figcaption>
+				</figure>
+				<p>
+					The player loses if a square with a
+					mine is clicked on.
+				</p>
+				<figure>
+					<img src="images/minesweeper_loss.png" id=loss>
+					<figcaption>
+						A mine was clicked on! The game board is cleared
+						and the clicked mine is highlighted to show where
+						the error occurred. The player is prompted to
+						play again.
+					</figcaption>
+				</figure>
+				<p>
+					Flagging is an additional feature that allows the player
+					to mark squares that they believe to contain mines.
+				</p>
+				<figure>
+					<img src="images/minesweeper_flag.png" id=flag>
+					<figcaption>Exclamation marks are used to flag squares</figcaption>
+				</figure>
+				<p>
+					The locations of mines are randomized every time the game
+					is played, creating	a new experience each time. 
+					This project uses the Java programming language to build a
+					fully functioning version of Minesweeper. Visit the link
+					to try it out.
+				</p>
+				<a href="https://github.com/macunningham0627/Minesweeper" target="_blank">Minesweeper project</a>
+			</div>
+			
+			<!-- Calculator -->		
+			<div id="calculator" class="project">
+				<h1>Calculator</h1>
+				<a href="../Calculator/index.html" target="_blank">Calculator project</a>
+				<p>
+					This project uses HTML, CSS, and Javascript to
+					create a calculator that can perform addition,
+					subtraction, multiplication, division, and exponents.
+					The calculator can receive inputs by using the built
+					in buttons or by pressing the corresponding keys on
+					the keyboard. Visit the link to try it out.
+				</p>
+				<figure>
+					<img src="images/calculator.png" id=calc_image>
+				</figure>
+			</div>
+		</div>
+	</body>
+</html>
